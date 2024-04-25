@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/my_font"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <androidx.appcompat.widget.AppCompatSeekBar
+       android:id="@+id/my_sikbar"
+       android:layout_width="match_parent"
+       android:layout_height="20dp"
+       android:layout_marginHorizontal="10dp"
+       android:layout_marginBottom="384dp"
+       android:progressBackgroundTint="#121111"
+       android:soundEffectsEnabled="true"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.473"
+       app:layout_constraintStart_toStartOf="parent" />
+
+   <Button
+       android:id="@+id/my_play"
+       android:layout_width="100dp"
+       android:layout_height="50dp"
+       android:layout_marginTop="28dp"
+       android:backgroundTint="#3E3E3A"
+       android:clickable="true"
+       android:focusable="true"
+       android:foreground="?actionBarItemBackground"
+       android:scaleType="centerCrop"
+       android:text="Play"
+       app:flow_verticalBias="120"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/my_sikbar" />
+
+   <Button
+       android:id="@+id/my_pause"
+       android:layout_width="100dp"
+       android:layout_height="50dp"
+       android:layout_marginTop="16dp"
+       android:backgroundTint="#474646"
+       android:clickable="true"
+       android:focusable="true"
+       android:foreground="?actionBarItemBackground"
+       android:scaleType="centerCrop"
+       android:text="Pause"
+       app:flow_verticalBias="120"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.819"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/my_play" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
